@@ -8,7 +8,11 @@
     "define",
     "console",
     "require",
-    "requirejs"
+    "requirejs",
+    "$routeProvider",
+    "$rootScope",
+    "$scope",
+    "$scope"
   ],
   "node" : false,
   "browser" : false,
