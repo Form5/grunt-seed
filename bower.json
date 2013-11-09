@@ -1,7 +1,7 @@
 {
-  "name": "gengi-is",
+  "name": "form5-grunt-seed",
   "version": "0.0.2",
-  "homepage": "https://github.com/Form5/gengi-is",
+  "homepage": "https://github.com/Form5/grunt-seed",
   "authors": [
     "Form5 <hello@form5.is>"
   ],
@@ -13,7 +13,8 @@
     "angular": "~1.2.0",
     "angular-animate": "~1.2.0",
     "angular-route": "~1.2.0",
-    "normalize-scss": "~2.1.2"
+    "normalize-scss": "~2.1.2",
+    "angular-resource": "~1.2.0"
   },
   "exportsOverride": {
     "jquery": {
