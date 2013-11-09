@@ -1,38 +1,29 @@
-require.config({
-  baseUrl: 'js',
-  paths: {
-    modernizr: 'vendor/modernizr',
-    jQuery: 'vendor/jquery',
-    angular: 'vendor/angular',
-    ngResource: 'vendor/angular-resource',
-    ngRoute: 'vendor/angular-route',
-    ngAnimate: 'vendor/angular-animate'
-  },
-  shim: {
-    angular: {
-      exports: 'angular'
+(function() {
+  require.config({
+    baseUrl: 'js',
+    paths: {
+      modernizr: 'vendor/modernizr',
+      jQuery: 'vendor/jquery',
+      angular: 'vendor/angular',
+      ngResource: 'vendor/angular-resource',
+      ngRoute: 'vendor/angular-route',
+      ngAnimate: 'vendor/angular-animate',
+      underscore: 'vendor/underscore'
     },
-    ngResource: {
-      deps: ['angular']
-    },
-    ngRoute: {
-      deps: ['angular']
-    },
-    ngAnimate: {
-      deps: ['angular']
-    },
-    jQuery: {
-      exports: 'jQuery'
-    },
-    Modernizr: {
-      exports: 'Modernizr'
+    shim: {
+      angular: { exports: 'angular' },
+      ngResource: { deps: ['angular'] },
+      ngRoute: { deps: ['angular'] },
+      ngAnimate: { deps: ['angular'] },
+      jQuery: { exports: 'jQuery' },
+      Modernizr: { exports: 'Modernizr' },
+      underscore: { exports: '_' }
     }
-  }
-});
-
-require(['jQuery', 'angular'], function($, angular) {
-  return $(function() {
-    angular.module('myApp', []);
-    return angular.bootstrap(document, ['myApp']);
   });
-});
+
+  require(['jQuery', 'angular'], function($, angular) {
+    $(function() {
+      angular.bootstrap(document, ['app']);
+    });
+  });
+}).call(this);
