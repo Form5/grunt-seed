@@ -32,7 +32,7 @@ require.config({
 
 require(['jQuery', 'angular'], function($, angular) {
   return $(function() {
-    var myApp = angular.module('myApp', []);
+    angular.module('myApp', []);
     return angular.bootstrap(document, ['myApp']);
   });
 });
