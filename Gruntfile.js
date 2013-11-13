@@ -32,18 +32,17 @@ module.exports = function(grunt) {
   grunt.registerTask('runServer', ['connect:dev', 'open:dev']);
 
   // The default task
-  grunt.registerTask('default',
-    [
-      'buildViews',
-      'minifyImages',
-      'buildCss',
-      'buildJs',
-      'copyFiles'
-    ]
-  );
+  grunt.registerTask('default', ['concurrent:buildAllDev']);
+
+  // The dist build task
+  grunt.registerTask('build', [
+    'concurrent:buildAllDist',
+    'concurrent:distOptimize'
+  ]);
 
   // The server task
-  grunt.registerTask('server', ['default', 'runServer', 'watch'])
+  grunt.registerTask('server', ['default', 'runServer', 'watch']);
+  grunt.registerTask('dev', ['runServer', 'watch']);
 };
 
 // Borrowed from Thomas Boyt (@thomasABoyt)
