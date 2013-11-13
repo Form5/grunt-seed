@@ -1,21 +1,20 @@
 {
   "name": "form5-grunt-seed",
-  "version": "0.0.2",
-  "homepage": "https://github.com/Form5/grunt-seed",
+  "version": "0.0.3",
+  "homepage": "https://github.com/Form5/gengi-is",
   "authors": [
     "Form5 <hello@form5.is>"
   ],
   "license": "MIT",
   "dependencies": {
-    "jquery": "~2.0.3",
     "requirejs": "~2.1.9",
-    "modernizr": "~2.6.2",
     "angular": "~1.2.0",
     "angular-animate": "~1.2.0",
     "angular-route": "~1.2.0",
     "normalize-scss": "~2.1.2",
     "angular-resource": "~1.2.0",
-    "underscore": "~1.5.2"
+    "underscore": "~1.5.2",
+    "requirejs-text": "~2.0.10"
   },
   "exportsOverride": {
     "jquery": {
@@ -27,20 +26,23 @@
     "requirejs": {
       "js": "require.js"
     },
-    "modernizr": {
-      "js": "modernizr.js"
+    "requirejs-text": {
+      "js": "text.js"
     },
     "angular": {
-      "js": "angular.js"
+      "js": "angular.min.js"
     },
     "underscore": {
-      "js": "underscore.js"
+      "js": "underscore.min.js"
     },
     "angular-route": {
-      "js": "angular-route.js"
+      "js": "angular-route.min.js"
     },
     "angular-animate": {
-      "js": "angular-animate.js"
+      "js": "angular-animate.min.js"
+    },
+    "angular-resource": {
+      "js": "angular-resource.min.js"
     },
     "*": {
       "js": "**/*.js",
