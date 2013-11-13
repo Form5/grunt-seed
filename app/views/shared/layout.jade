@@ -10,4 +10,5 @@ html(class="no-js")
       block content
 
     block javascript
-      script(src='http://localhost:35729/livereload.js')
+      if env == 'development'
+        script(src='http://localhost:35729/livereload.js')
