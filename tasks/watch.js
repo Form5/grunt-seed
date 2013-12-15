@@ -1,34 +1,34 @@
 module.exports = {
   jade: {
-    files: ['app/views/**/*.jade'],
+    files: ['dev/views/**/*.jade'],
     tasks: ['buildViews']
   },
   sass: {
-    files: ['app/css/**/*.scss'],
+    files: ['dev/css/**/*.scss'],
     tasks: ['buildCss']
   },
   img: {
-    files: ['app/img/**/*.{jpg,png,gif,jpeg,ico}'],
+    files: ['dev/img/**/*.{jpg,png,gif,jpeg,ico}'],
     tasks: ['minifyImages']
   },
   webfonts: {
-    files: ['app/fonts/**.{eof,woff,ttf}'],
+    files: ['dev/fonts/**.{eof,woff,ttf}'],
     tasks: ['copyFiles']
   },
   javascript: {
-    files: ['app/js/**/*.js'],
+    files: ['dev/js/**/*.js'],
     tasks: ['buildJs', 'copyFiles']
   },
   ico: {
-    files: ['app/img/**/*.ico'],
+    files: ['dev/img/**/*.ico'],
     tasks: ['copyFiles']
   },
   dev: {
     files: [
-      'dev/css/**/*.css',
-      'dev/**/*.html',
-      'dev/img/**/*.{png,jpg,jpeg,gif,svg}',
-      'dev/js/**/*.js'
+      'app/css/**/*.css',
+      'app/**/*.html',
+      'app/img/**/*.{png,jpg,jpeg,gif,svg}',
+      'app/js/**/*.js'
     ],
     options: {
       livereload: true

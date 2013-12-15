@@ -4,6 +4,6 @@ node_modules
 npm-debug.log
 bower_components
 dist
-dev
-app/js/vendor
-app/css/vendor
+app
+dev/js/vendor
+dev/css/vendor

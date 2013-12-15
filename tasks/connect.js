@@ -9,7 +9,7 @@ module.exports = {
       livereload: {
         options: {
           open: true,
-          base: 'dev'
+          base: 'app'
         }
       },
       middleware: function (connect, options) {

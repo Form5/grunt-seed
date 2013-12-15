@@ -11,9 +11,9 @@ module.exports = {
     files: [
       {
         expand: true,
-        cwd: 'app/views/',
+        cwd: 'dev/views/',
         src: ['*.jade', 'partials/*.jade'],
-        dest: 'dev/',
+        dest: 'app/',
         ext: '.html'
       }
     ]
@@ -22,7 +22,7 @@ module.exports = {
     files: [
       {
         expand: true,
-        cwd: 'app/views/',
+        cwd: 'dev/views/',
         src: ['*.jade', 'partials/*.jade'],
         dest: 'dist/',
         ext: '.html'

@@ -4,23 +4,23 @@ module.exports = {
       // Javascript files
       {
         expand: true,
-        cwd: 'app/js',
+        cwd: 'dev/js',
         src: '**/*.js',
-        dest: 'dev/js'
+        dest: 'app/js'
       },
       // Webfonts
       {
         expand: true,
-        cwd: 'app/fonts',
+        cwd: 'dev/fonts',
         src: '**',
-        dest: 'dev/fonts'
+        dest: 'app/fonts'
       },
       // Ico files
       {
         expand: true,
-        cwd: 'app/img',
+        cwd: 'dev/img',
         src: '**/*.ico',
-        dest: 'dev/img'
+        dest: 'app/img'
       }
     ]
   },
@@ -29,14 +29,14 @@ module.exports = {
       // Webfonts
       {
         expand: true,
-        cwd: 'app/fonts',
+        cwd: 'dev/fonts',
         src: '**',
         dest: 'dist/fonts'
       },
       // Ico files
       {
         expand: true,
-        cwd: 'app/img',
+        cwd: 'dev/img',
         src: '**/*.ico',
         dest: 'dist/img'
       }
