@@ -3,7 +3,7 @@ var path = require('path');
 module.exports = {
   install: {
     options: {
-      targetDir: './app/',
+      targetDir: './dev/',
       install: true,
       verbose: true,
       cleanTargetDir: false,
