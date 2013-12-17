@@ -1,26 +1,26 @@
 module.exports = {
   jade: {
-    files: ['app/views/**/*.jade'],
+    files: ['src/views/**/*.jade'],
     tasks: ['buildViews']
   },
   sass: {
-    files: ['app/css/**/*.scss'],
+    files: ['src/css/**/*.scss'],
     tasks: ['buildCss']
   },
   img: {
-    files: ['app/img/**/*.{jpg,png,gif,jpeg,ico}'],
+    files: ['src/img/**/*.{jpg,png,gif,jpeg,ico}'],
     tasks: ['minifyImages']
   },
   webfonts: {
-    files: ['app/fonts/**.{eof,woff,ttf}'],
+    files: ['src/fonts/**.{eof,woff,ttf}'],
     tasks: ['copyFiles']
   },
   javascript: {
-    files: ['app/js/**/*.js'],
+    files: ['src/js/**/*.js'],
     tasks: ['buildJs', 'copyFiles']
   },
   ico: {
-    files: ['app/img/**/*.ico'],
+    files: ['src/img/**/*.ico'],
     tasks: ['copyFiles']
   },
   dev: {

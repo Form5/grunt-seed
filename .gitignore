@@ -5,5 +5,5 @@ npm-debug.log
 bower_components
 dist
 dev
-app/js/vendor
-app/css/vendor
+src/js/vendor
+src/css/vendor

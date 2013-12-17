@@ -3,7 +3,7 @@ module.exports = {
     files: [
       {
         expand: true,
-        cwd: 'app/img/',
+        cwd: 'src/img/',
         src: ['**/*.svg'],
         dest: 'dev/img/'
       }
@@ -13,7 +13,7 @@ module.exports = {
     files: [
       {
         expand: true,
-        cwd: 'app/img/',
+        cwd: 'src/img/',
         src: ['**/*.svg'],
         dest: 'dist/img/'
       }
