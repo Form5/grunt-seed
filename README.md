@@ -34,7 +34,7 @@ $ grunt server
 ## Structure
 
 ```
-app
+src
 ├── css
 │   └── main.scss
 │   └── vendor
