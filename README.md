@@ -53,12 +53,25 @@ src
 
 ## Todo
 
-* Add support for production packaging with more minification, uglification etc.
+* Add versioning support for assets (grunt-rev or grunt-assets-versioning f.x.).
+* Explore how others have implemented and automated Bower package installation
+* Library of **very** common code snippets? (Generators perhaps?)
+* Installation script (npm install, bower install, grunt tasks)
+* Deployment hooks
+* Unit tests
+* Modernizr dependency checking and custom builder (benediktvaldez)
+* ~~Add support for production packaging with more minification, uglification etc.~~
 
 
 ## Author
 
 Form5 is a small interactive studio based in Reykjavík, Iceland. We design and build websites and apps. To learn more about us, check out [www.Form5.is](http://www.form5.is).
+
+## Contributors
+
+Benedikt Valdez D. Stefánsson (@benediktvaldez)
+Ólafur Örn Nielsen (@olafurnielsen)
+Ragnar Þór Valgeirsson (@rthor)
 
 
 ## License
