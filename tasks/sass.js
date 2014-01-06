@@ -1,12 +1,24 @@
 module.exports = {
   dev: {
-    files: {
-      'dev/css/main.css': 'src/css/main.scss'
-    }
+    files: [
+      {
+        expand: true,
+        cwd: 'src/css/',
+        src: ['*.scss'],
+        dest: 'dev/css/',
+        ext: '.css'
+      }
+    ]
   },
   dist: {
-    files: {
-      'dist/css/main.css': 'src/css/main.scss'
-    }
+    files: [
+      {
+        expand: true,
+        cwd: 'src/css/',
+        src: ['*.scss'],
+        dest: 'dist/css/',
+        ext: '.css'
+      }
+    ]
   }
 };

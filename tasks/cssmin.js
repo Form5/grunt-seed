@@ -1,7 +1,13 @@
 module.exports = {
   dist: {
-    files: {
-      'dist/css/main.css': ['dist/css/main.css']
-    }
+    files: [
+      {
+        expand: true,
+        cwd: 'dist/css/',
+        src: ['*.css'],
+        dest: 'dist/css/',
+        ext: '.css'
+      }
+    ]
   }
 };
