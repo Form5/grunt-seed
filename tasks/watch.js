@@ -5,7 +5,7 @@ module.exports = {
   },
   sass: {
     files: ['src/css/**/*.scss'],
-    tasks: ['buildCss']
+    tasks: ['buildCss','modernizr']
   },
   img: {
     files: ['src/img/**/*.{jpg,png,gif,jpeg,ico}'],
@@ -17,7 +17,7 @@ module.exports = {
   },
   javascript: {
     files: ['src/js/**/*.js'],
-    tasks: ['buildJs', 'copyFiles']
+    tasks: ['buildJs', 'modernizr', 'copyFiles']
   },
   ico: {
     files: ['src/img/**/*.ico'],

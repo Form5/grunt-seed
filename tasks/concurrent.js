@@ -2,6 +2,7 @@ module.exports = {
   buildAllDev: [
     'buildViews',
     'minifyImages',
+    'modernizr',
     'buildCss',
     'buildJs',
     'copyFiles'

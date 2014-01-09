@@ -14,11 +14,15 @@
     "normalize-scss": "~2.1.2",
     "angular-resource": "~1.2.0",
     "underscore": "~1.5.2",
-    "requirejs-text": "~2.0.10"
+    "requirejs-text": "~2.0.10",
+    "modernizr": "~2.7.1"
   },
   "exportsOverride": {
     "jquery": {
       "js": "jquery.js"
+    },
+    "modernizr": {
+      "js": "modernizr.js"
     },
     "normalize-scss": {
       "scss": "_normalize.scss"
