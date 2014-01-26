@@ -1,5 +1,6 @@
 module.exports = {
   buildAllDev: [
+    'clean:dev',
     'buildViews',
     'minifyImages',
     'modernizr',
@@ -9,6 +10,7 @@ module.exports = {
   ],
   buildAllDist: [
     'default',
+    'clean:dist',
     'jade:dist',
     'sass:dist',
     'copy:dist',
