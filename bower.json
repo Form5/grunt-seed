@@ -3,7 +3,10 @@
   "version": "0.0.3",
   "homepage": "https://github.com/Form5/grunt-seed",
   "authors": [
-    "Form5 <hello@form5.is>"
+    "Form5 <hello@form5.is>",
+    "Olafur Nielsen <olafur@form5.is>",
+    "Benedikt D Valdez <benedikt@form5.is>",
+    "Arni Reynir Oskarsson <arni@form5.is>"
   ],
   "license": "MIT",
   "dependencies": {
