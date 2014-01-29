@@ -1,4 +1,4 @@
-grunt-seed [![Build Status](https://travis-ci.org/Form5/grunt-seed.png?branch=master)](https://travis-ci.org/Form5/grunt-seed) [![Dependency Status](https://gemnasium.com/Form5/grunt-seed.png)](https://gemnasium.com/Form5/grunt-seed) [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
+grunt-seed v0.1.0 [![Build Status](https://travis-ci.org/Form5/grunt-seed.png?branch=master)](https://travis-ci.org/Form5/grunt-seed) [![Dependency Status](https://gemnasium.com/Form5/grunt-seed.png)](https://gemnasium.com/Form5/grunt-seed) [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
 ===============================================================================
 
 This is our badass and customized front-end development workflow that uses [Grunt](http://gruntjs.com/) for task automation. This is a project seed that you can use to build your own projects on.
