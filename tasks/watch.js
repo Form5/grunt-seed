@@ -5,10 +5,10 @@ module.exports = {
   },
   sass: {
     files: ['src/css/**/*.scss'],
-    tasks: ['buildCss','modernizr']
+    tasks: ['buildCss']
   },
   img: {
-    files: ['src/img/**/*.{jpg,png,gif,jpeg,ico}'],
+    files: ['src/img/**/*.{svg,jpg,png,gif,jpeg}'],
     tasks: ['minifyImages']
   },
   webfonts: {
@@ -17,7 +17,7 @@ module.exports = {
   },
   javascript: {
     files: ['src/js/**/*.js'],
-    tasks: ['buildJs', 'modernizr', 'copyFiles']
+    tasks: ['buildJs', 'copyFiles']
   },
   ico: {
     files: ['src/img/**/*.ico'],
@@ -26,7 +26,7 @@ module.exports = {
   dev: {
     files: [
       'dev/css/**/*.css',
-      'dev/**/*.html',
+      'dev/*.html',
       'dev/img/**/*.{png,jpg,jpeg,gif,svg}',
       'dev/js/**/*.js'
     ],

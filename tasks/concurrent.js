@@ -3,7 +3,6 @@ module.exports = {
     'clean:dev',
     'buildViews',
     'minifyImages',
-    'modernizr',
     'buildCss',
     'buildJs',
     'copyFiles'
@@ -13,6 +12,7 @@ module.exports = {
     'clean:dist',
     'jade:dist',
     'sass:dist',
+    'modernizr',
     'copy:dist',
     'imagemin:dist',
     'svgmin:dist',
