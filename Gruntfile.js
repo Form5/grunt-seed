@@ -42,7 +42,7 @@ module.exports = function(grunt) {
   grunt.registerTask('runServer', ['connect:dev', 'open:dev']);
 
   // The default task
-  grunt.registerTask('default', ['concurrent:buildAllDev']);
+  grunt.registerTask('default', ['bower','concurrent:buildAllDev']);
 
   // The dist build task
   grunt.registerTask('build', [
