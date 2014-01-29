@@ -10,6 +10,16 @@ module.exports = function(grunt) {
 
   // Load all tasks under the tasks folder
   grunt.util._.extend(config, loadConfig('./tasks/'));
+
+  // Deployment options
+  config.shell = {
+    deploy: {
+      options: { stdout: true },
+      command: config.pkg.hasOwnProperty('deployCmd') ? config.pkg.deployCmd : 'echo "No deployment command defined, please define the deployCmd attribute in package.json."'
+    }
+  };
+
+  // Initialize the config and load all tasks
   grunt.initConfig(config);
   require('load-grunt-tasks')(grunt);
 
@@ -39,6 +49,9 @@ module.exports = function(grunt) {
     'concurrent:buildAllDist',
     'concurrent:distOptimize'
   ]);
+
+  // The deployment task
+  grunt.registerTask('deploy', ['build', 'shell:deploy']);
 
   // The server task
   grunt.registerTask('server', ['default', 'runServer', 'watch']);
