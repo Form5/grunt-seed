@@ -45,6 +45,10 @@ head
   //- meta(name="msapplication-TileImage", content="/ico/msapplication-TileImage-144.png")
   //- meta(name="msapplication-TileColor", content="#00ff00")
 
+  if env == 'development'
+    script(src='js/vendor/modernizr.js')
+  else
+    script(src='js/vendor/modernizr-custom.js')
+
   link(rel='stylesheet', href='css/main.css')
-  script(src='js/vendor/modernizr-custom.js')
   script(data-main='js/main', src='js/vendor/require.js')
