@@ -1,5 +1,5 @@
-grunt-seed
-==========
+grunt-seed [![Build Status](https://travis-ci.org/Form5/grunt-seed.png?branch=master)](https://travis-ci.org/Form5/grunt-seed) [![Dependency Status](https://gemnasium.com/Form5/grunt-seed.png)](https://gemnasium.com/Form5/grunt-seed) [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
+===============================================================================
 
 This is our badass and customized front-end development workflow that uses [Grunt](http://gruntjs.com/) for task automation. This is a project seed that you can use to build your own projects on.
 
@@ -11,10 +11,11 @@ This is our badass and customized front-end development workflow that uses [Grun
 * [Jade](http://jade-lang.com/) for templates
 * [ScSS](http://sass-lang.com/) for stylesheets
 * Uses [Require.js](http://requirejs.org/) for asynchronous module loading
-* Install bower dependencies with `grunt bower` and packages will be automatically placed in the correct directories
+* Install bower dependencies with `grunt bower` and packages will be automatically placed in the correct directories (will also run on build)
 * JSHint with grunt. See options in `.jshintrc`
-* Minifies jpg, png, gif and svg
-* Desktop notifications on Grunt errors:
+* Minifies jpg, png, gif, svg, css, html and uglifies javascript
+* Optional deployment via shell command in package.json (`grunt deploy)
+* Desktop notifications on Grunt errors ([support varies](https://github.com/dylang/grunt-notify#notification-systems)):
 
 ![ScreenShot](http://clients.form5.is/assets/grunt-seed-notifications.jpg)
 
@@ -26,8 +27,18 @@ $ git init your-project-name
 $ cd your-project-name
 $ git pull https://github.com/Form5/grunt-seed.git
 $ npm install
-$ grunt bower
+```
+
+### Development webserver <sup><sub>(builds to ./dev)</sub></sup>
+
+```shell
 $ grunt server
+```
+
+### Production build <sup><sub>(builds to ./dist, with minification etc)</sub></sup>
+
+```shell
+$ grunt build
 ```
 
 
@@ -36,7 +47,7 @@ $ grunt server
 ```
 src
 ├── css
-│   └── main.scss
+│   ├── main.scss
 │   └── vendor
 ├── fonts
 ├── img
@@ -51,17 +62,12 @@ src
 ```
 
 
-## Todo
+## Todos and bugs
 
-* Add versioning support for assets (grunt-rev or grunt-assets-versioning f.x.).
-* Explore how others have implemented and automated Bower package installation
 * Library of **very** common code snippets? (Generators perhaps?)
-* Installation script (npm install, bower install, grunt tasks)
-* Deployment hooks
 * Unit tests
-* Modernizr dependency checking and custom builder (benediktvaldez)
-* ~~Add support for production packaging with more minification, uglification etc.~~
 
+See our [issue tracker](/Form5/grunt-seed/issues) for a complete list of todos, bug reports and milestones.
 
 ## Author
 
@@ -69,30 +75,10 @@ Form5 is a small interactive studio based in Reykjavík, Iceland. We design and 
 
 ## Contributors
 
-Benedikt Valdez D. Stefánsson (@benediktvaldez)
 Ólafur Örn Nielsen (@olafurnielsen)
+
+Benedikt Valdez D. Stefánsson (@benediktvaldez)
+
+Árni Reynir Óskarsson (@arnireynir)
+
 Ragnar Þór Valgeirsson (@rthor)
-
-
-## License
-
-The MIT License (MIT)
-
-Copyright (c) 2013 Form5
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of
-this software and associated documentation files (the "Software"), to deal in
-the Software without restriction, including without limitation the rights to
-use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
-the Software, and to permit persons to whom the Software is furnished to do so,
-subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
-FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
-COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
-IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
-CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
