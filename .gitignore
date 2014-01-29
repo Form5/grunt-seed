@@ -7,3 +7,4 @@ dist
 dev
 src/js/vendor
 src/css/vendor
+*.sublime-workspace
