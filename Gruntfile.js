@@ -42,10 +42,12 @@ module.exports = function(grunt) {
   grunt.registerTask('runServer', ['connect:dev', 'open:dev']);
 
   // The default task
-  grunt.registerTask('default', ['bower','concurrent:buildAllDev']);
+  grunt.registerTask('default', ['bower', 'clean:dev','concurrent:buildAllDev']);
 
   // The dist build task
   grunt.registerTask('build', [
+    'default',
+    'clean:dist',
     'concurrent:buildAllDist',
     'concurrent:distOptimize'
   ]);
